@@ -1,0 +1,511 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+        width: 1050px;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0px;
+
+        .top {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px 0px;
+
+            ul {
+                width: 181.11px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+
+                    a { 
+                        font: bold 12px/1 "Noto Sans";
+                        color: #333;
+                    }
+
+                    &:nth-of-type(1) a {
+                        font: bold 12px/1 "Noto Sans";
+                        color: rgb(95, 0, 128);
+                    }
+
+                    
+
+
+                    &:nth-of-type(2)::before, &:nth-of-type(3)::before {
+                        content: '';
+                        display: inline-block;
+                        width: 1px;
+                        height: 13px;
+                        margin: 0px 10px;
+                        background-color: rgb(217, 217, 217);
+                        
+                    }
+
+                    
+                }
+
+            }
+        }
+
+        .middle {
+            width: 100%;
+            padding: 5px 0px;
+            nav {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo {
+                    flex-basis: 200px;
+                    flex-grow: 0;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+
+                    li {
+                        &:nth-of-type(2) {
+                            color: rgb(95, 0, 128);
+                            font: bold 18px/1.33 "Noto Sans";
+                            cursor: pointer;
+                            margin-left: 20px;
+                        }
+                        
+                    }
+                }
+                
+                .search {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 400px;
+                    height: 48px;
+                    flex-grow: 0;
+                    padding: 14px;
+                    border: 1px solid rgb(95, 0, 128);
+                    border-radius: 6px;
+                    
+
+                    input {
+                        border: none;
+                        outline: none;
+                        font-size: 16px;
+                        letter-spacing: -0.5px;
+                        color: #333;
+                    }
+
+                    button {
+                        width: 30px;
+                        height: 30px;
+                        border: none;
+                        cursor: pointer;
+                        color: rgb(95, 0, 128);
+                        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTI0IDI0SDZWNmgxOHoiLz4KICAgICAgICA8cGF0aCBkPSJNMjIuNSAyMi41aC0xNXYtMTVoMTV6Ii8+CiAgICAgICAgPGcgc3Ryb2tlPSIjMzMzIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOC44MjUgMTMuMzUyYzAgMS43MjUtLjc1IDMuMjI1LTEuOTUgNC4yLS45NzUuODI1LTIuMTc1IDEuMjc1LTMuNTI1IDEuMjc1YTUuNDU3IDUuNDU3IDAgMCAxLTUuNDc1LTUuNDc1IDUuNDU3IDUuNDU3IDAgMCAxIDUuNDc1LTUuNDc1YzMtLjA3NSA1LjQ3NSAyLjQgNS40NzUgNS40NzV6TTIxLjM3NSAyMS4zNzVsLTMuNzUtMy43NSIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==) 0px 0px no-repeat;
+                        
+                    }
+         
+                }
+
+                .icon {
+                    flex-basis: 180px;
+                    flex-grow: 0;
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0px;
+
+            .category {
+                flex-basis: 140px;
+                flex-grow: 0;
+                display: flex;
+                justify-self: start;
+     
+
+                span {
+                    &:nth-of-type(1) {
+                        display: inline-block;
+                        width: 16px;
+                        height: 14px;
+                        margin-right: 14px;
+                        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMTZ2MS43SDBWMHptMCA2LjE1aDE2djEuN0gwdi0xLjd6bTAgNi4xNWgxNlYxNEgwdi0xLjd6IiBmaWxsPSIjMzMzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg==) 0px 0px / 16px 14px no-repeat;
+                    }
+    
+                    &:nth-of-type(2) {
+                        display: inline-block;
+                        font: bold 16px/20px "Noto Sans";
+                        letter-spacing: -0.3px;
+                        cursor: pointer;
+                        color: #333;
+                    }
+                }
+                
+
+            }
+
+            .gnb {
+                flex-grow: 0;
+                display: flex;
+                justify-content: space-between;
+                
+
+                li {
+                    width: 150px;
+                    height: 55px;
+                    text-align: center;
+                    height: fit-content;
+                    letter-spacing: -0.5px;
+                    font: bold 16px "Noto Sans";
+                    color: rgb(51, 51, 51);
+                    cursor: pointer;
+                }
+            }
+
+            .delivery-info {
+                width: 155px;
+                flex-grow: 0;
+                padding: 6px 16px;
+                border: 1px solid rgb(238, 238, 238);
+                border-radius: 18px;
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: -0.5px;
+                font: bold 13px/16px "Noto Sans";
+                text-align: center;
+                color: rgb(102, 102, 102);
+
+                span {
+                    font-weight: 500;
+                    font: bold 13px/16px "Noto Sans";
+                    color: rgb(95, 0, 128);
+                }
+            }
+            
+
+        }
+
+        
+    }
+
+    .banner {
+        width: 2000px;
+        min-width: 1050px;
+        margin-bottom: 100px;
+        img {
+            width: 100%;
+            min-width: 1050px;
+            max-width: 100%;
+            object-fit: cover;
+        }
+        
+    }
+
+    .product {
+        width: 1050px;
+
+        h2 {
+            text-align: center;
+            color: rgb(51, 51, 51);
+            font: bold 28px/1.15 "Noto Sans";
+            letter-spacing: -0.26px;
+            margin-bottom: 30px;
+        }
+        
+        article {
+            
+            .items {
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                color: rgb(51, 51, 51);
+                margin-bottom: 100px;
+
+                li {
+                    flex-grow: 1;
+                    overflow: hidden;
+
+                    img {
+                        width: 250px;
+                        height: 320px;
+                        margin-bottom: 8px;
+                    }
+
+                    h3 {
+                        font: 16px/1.45 "Noto Sans";
+                        font-weight: 400;
+                        margin-bottom: 8px;
+                    }
+
+                    .price {
+                        font: bold 16px/1.5 "Noto Sans";
+                    }
+
+                    .review {
+                        svg {
+                            width: 15px;
+                            height: 15px;
+                        }
+    
+                        .review-number {
+                            font: bold 12px/17px "Noto Sans";
+                            color: rgb(153, 153, 153);
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    .advertise {
+        width: 1050px;
+        height: 140px;
+
+        margin-bottom: 100px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .bargain {
+        width: 1050px;
+
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        .bargain-left {
+            width: 350px;
+
+            h2 {
+                font: bold 28px/1.1 "Noto Sans";
+                color: rgb(51, 51, 51);
+                letter-spacing: -0.26px;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font: 16px/1.3 "Noto Sans";
+                color: rgb(153, 153, 153);
+                margin-bottom: 25px;
+            }
+
+            .time {
+                margin-bottom: 35px;
+                span {
+                    font: bold 32px "Noto Sans";
+                    color: rgb(51, 51, 51);
+                    &:nth-of-type(1)::after,  &:nth-of-type(2)::after{
+                        content: ":";
+                        width: 11px;
+                        height: 50px;
+                        font: bold 25px "Noto Sans";
+                    }
+                }
+            }
+
+            p {
+                font: 14px/1.43 "Noto Sans";
+                color: rgb(204, 204, 204);
+                letter-spacing: -0.4px;
+
+            }
+        }
+
+        .bargain-right {
+            width: 700px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 350px;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font: 14px/1.38 "Noto Sans";
+                color: rgb(153, 153, 153);
+                margin-bottom: 8px;
+            }
+
+            h3 {
+                font: 16px/1.45 "Noto Sans";
+                margin-bottom: 7px;
+            }
+
+            div {
+                margin-bottom: 8px;
+                span {
+                    &:nth-of-type(1) {
+                        font: bold 20px/30px "Noto Sans";
+                        color: rgb(250, 98, 47);
+                        margin-right: 7px;
+                    }
+                    &:nth-of-type(2) {
+                        font: bold 20px/30px "Noto Sans";
+                    }
+                    &:nth-of-type(3) {
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-decoration: line-through;
+                        color: rgb(181, 181, 181);
+                    }
+                }
+            }
+
+            .review {
+                svg {
+                    width: 17px;
+                    height: 17px;
+                }
+
+                .review-number {
+                    font: bold 14px/19px "Noto Sans";
+                    color: rgb(153, 153, 153);
+                }
+            }
+            
+        }
+
+    }
+
+    footer {
+        width: 1050px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            
+
+            h2 {
+                font: bold 20px/29px "Noto Sans";
+                margin-bottom: 17px;
+            }
+
+            strong {
+                font: bold 28px/40px "Noto Sans";
+                margin-bottom: 20px;
+                span {
+                    margin-left: 8px;
+                    font: 16px "Noto Sans";
+                }
+            }
+
+            .contact-time {
+                div {
+                    display: flex;
+                    font: 14px"Noto Sans";
+                    color: rgb(153, 153, 153);
+                    letter-spacing: -0.5px;
+
+                    button {
+                        display: inline-block;
+                        width: 140px;
+                        height: 40px;
+                        border: 1px solid rgb(226, 226, 226);
+                        border-radius: 3px;
+                        text-align: center;
+                        margin-right: 16px;
+                        margin-bottom: 16px;
+                        background-color: transparent;
+                        font: 14px "Noto Sans";
+                        color: #333
+    
+                    }
+                }
+                
+            }
+
+            .contact-email {
+                font: 12px/18px "Noto Sans";
+                color: rgb(153, 153, 153);
+                a {
+                    font: 12px/18px "Noto Sans";
+                    color: rgb(153, 153, 153);
+                }
+            }
+        }
+
+        .footer-right {
+
+            display: flex;
+            flex-direction: column;
+
+            .introduce {
+                width: 470px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+
+                li {
+
+                    font: 14px/18px "Noto Sans";                    
+                    &:nth-of-type(5) {
+                        font: bold 14px/18px "Noto Sans";
+                    }
+                    a{
+                        color: #333;
+                    }
+                    
+                }
+            }
+
+            div {
+                font: 12px/18px "Noto Sans";
+                color: rgb(153, 153, 153);
+                margin-bottom: 30px;
+                a {
+                    font: bold 12px/18px "Noto Sans";
+                }
+
+            }
+
+            .sns {
+                display: flex;
+                justify-content: start;
+                li {
+                    margin-right: 10px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                } 
+            }
+
+        }
+
+    }
+
+}

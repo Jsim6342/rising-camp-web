@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main header {
+  width: 1050px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+#main header .top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0px;
+}
+#main header .top ul {
+  width: 181.11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main header .top ul li a {
+  font: bold 12px/1 "Noto Sans";
+  color: #333;
+}
+#main header .top ul li:nth-of-type(1) a {
+  font: bold 12px/1 "Noto Sans";
+  color: rgb(95, 0, 128);
+}
+#main header .top ul li:nth-of-type(2)::before, #main header .top ul li:nth-of-type(3)::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  margin: 0px 10px;
+  background-color: rgb(217, 217, 217);
+}
+#main header .middle {
+  width: 100%;
+  padding: 5px 0px;
+}
+#main header .middle nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main header .middle nav .logo {
+  flex-basis: 200px;
+  flex-grow: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#main header .middle nav .logo li:nth-of-type(2) {
+  color: rgb(95, 0, 128);
+  font: bold 18px/1.33 "Noto Sans";
+  cursor: pointer;
+  margin-left: 20px;
+}
+#main header .middle nav .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 48px;
+  flex-grow: 0;
+  padding: 14px;
+  border: 1px solid rgb(95, 0, 128);
+  border-radius: 6px;
+}
+#main header .middle nav .search input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+#main header .middle nav .search button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  color: rgb(95, 0, 128);
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTI0IDI0SDZWNmgxOHoiLz4KICAgICAgICA8cGF0aCBkPSJNMjIuNSAyMi41aC0xNXYtMTVoMTV6Ii8+CiAgICAgICAgPGcgc3Ryb2tlPSIjMzMzIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOC44MjUgMTMuMzUyYzAgMS43MjUtLjc1IDMuMjI1LTEuOTUgNC4yLS45NzUuODI1LTIuMTc1IDEuMjc1LTMuNTI1IDEuMjc1YTUuNDU3IDUuNDU3IDAgMCAxLTUuNDc1LTUuNDc1IDUuNDU3IDUuNDU3IDAgMCAxIDUuNDc1LTUuNDc1YzMtLjA3NSA1LjQ3NSAyLjQgNS40NzUgNS40NzV6TTIxLjM3NSAyMS4zNzVsLTMuNzUtMy43NSIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==) 0px 0px no-repeat;
+}
+#main header .middle nav .icon {
+  flex-basis: 180px;
+  flex-grow: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#main header .middle nav .icon li {
+  width: 36px;
+  height: 36px;
+}
+#main header .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+}
+#main header .bottom .category {
+  flex-basis: 140px;
+  flex-grow: 0;
+  display: flex;
+  justify-self: start;
+}
+#main header .bottom .category span:nth-of-type(1) {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  margin-right: 14px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMTZ2MS43SDBWMHptMCA2LjE1aDE2djEuN0gwdi0xLjd6bTAgNi4xNWgxNlYxNEgwdi0xLjd6IiBmaWxsPSIjMzMzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg==) 0px 0px/16px 14px no-repeat;
+}
+#main header .bottom .category span:nth-of-type(2) {
+  display: inline-block;
+  font: bold 16px/20px "Noto Sans";
+  letter-spacing: -0.3px;
+  cursor: pointer;
+  color: #333;
+}
+#main header .bottom .gnb {
+  flex-grow: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#main header .bottom .gnb li {
+  width: 150px;
+  height: 55px;
+  text-align: center;
+  height: fit-content;
+  letter-spacing: -0.5px;
+  font: bold 16px "Noto Sans";
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+#main header .bottom .delivery-info {
+  width: 155px;
+  flex-grow: 0;
+  padding: 6px 16px;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 18px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  font: bold 13px/16px "Noto Sans";
+  text-align: center;
+  color: rgb(102, 102, 102);
+}
+#main header .bottom .delivery-info span {
+  font-weight: 500;
+  font: bold 13px/16px "Noto Sans";
+  color: rgb(95, 0, 128);
+}
+#main .banner {
+  width: 2000px;
+  min-width: 1050px;
+  margin-bottom: 100px;
+}
+#main .banner img {
+  width: 100%;
+  min-width: 1050px;
+  max-width: 100%;
+  object-fit: cover;
+}
+#main .product {
+  width: 1050px;
+}
+#main .product h2 {
+  text-align: center;
+  color: rgb(51, 51, 51);
+  font: bold 28px/1.15 "Noto Sans";
+  letter-spacing: -0.26px;
+  margin-bottom: 30px;
+}
+#main .product article .items {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: rgb(51, 51, 51);
+  margin-bottom: 100px;
+}
+#main .product article .items li {
+  flex-grow: 1;
+  overflow: hidden;
+}
+#main .product article .items li img {
+  width: 250px;
+  height: 320px;
+  margin-bottom: 8px;
+}
+#main .product article .items li h3 {
+  font: 16px/1.45 "Noto Sans";
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+#main .product article .items li .price {
+  font: bold 16px/1.5 "Noto Sans";
+}
+#main .product article .items li .review svg {
+  width: 15px;
+  height: 15px;
+}
+#main .product article .items li .review .review-number {
+  font: bold 12px/17px "Noto Sans";
+  color: rgb(153, 153, 153);
+}
+#main .advertise {
+  width: 1050px;
+  height: 140px;
+  margin-bottom: 100px;
+}
+#main .advertise img {
+  width: 100%;
+  height: 100%;
+}
+#main .bargain {
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+#main .bargain .bargain-left {
+  width: 350px;
+}
+#main .bargain .bargain-left h2 {
+  font: bold 28px/1.1 "Noto Sans";
+  color: rgb(51, 51, 51);
+  letter-spacing: -0.26px;
+  margin-bottom: 10px;
+}
+#main .bargain .bargain-left h3 {
+  font: 16px/1.3 "Noto Sans";
+  color: rgb(153, 153, 153);
+  margin-bottom: 25px;
+}
+#main .bargain .bargain-left .time {
+  margin-bottom: 35px;
+}
+#main .bargain .bargain-left .time span {
+  font: bold 32px "Noto Sans";
+  color: rgb(51, 51, 51);
+}
+#main .bargain .bargain-left .time span:nth-of-type(1)::after, #main .bargain .bargain-left .time span:nth-of-type(2)::after {
+  content: ":";
+  width: 11px;
+  height: 50px;
+  font: bold 25px "Noto Sans";
+}
+#main .bargain .bargain-left p {
+  font: 14px/1.43 "Noto Sans";
+  color: rgb(204, 204, 204);
+  letter-spacing: -0.4px;
+}
+#main .bargain .bargain-right {
+  width: 700px;
+  cursor: pointer;
+}
+#main .bargain .bargain-right img {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 8px;
+}
+#main .bargain .bargain-right p {
+  font: 14px/1.38 "Noto Sans";
+  color: rgb(153, 153, 153);
+  margin-bottom: 8px;
+}
+#main .bargain .bargain-right h3 {
+  font: 16px/1.45 "Noto Sans";
+  margin-bottom: 7px;
+}
+#main .bargain .bargain-right div {
+  margin-bottom: 8px;
+}
+#main .bargain .bargain-right div span:nth-of-type(1) {
+  font: bold 20px/30px "Noto Sans";
+  color: rgb(250, 98, 47);
+  margin-right: 7px;
+}
+#main .bargain .bargain-right div span:nth-of-type(2) {
+  font: bold 20px/30px "Noto Sans";
+}
+#main .bargain .bargain-right div span:nth-of-type(3) {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: line-through;
+  color: rgb(181, 181, 181);
+}
+#main .bargain .bargain-right .review svg {
+  width: 17px;
+  height: 17px;
+}
+#main .bargain .bargain-right .review .review-number {
+  font: bold 14px/19px "Noto Sans";
+  color: rgb(153, 153, 153);
+}
+#main footer {
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+#main footer .footer-left {
+  display: flex;
+  flex-direction: column;
+}
+#main footer .footer-left h2 {
+  font: bold 20px/29px "Noto Sans";
+  margin-bottom: 17px;
+}
+#main footer .footer-left strong {
+  font: bold 28px/40px "Noto Sans";
+  margin-bottom: 20px;
+}
+#main footer .footer-left strong span {
+  margin-left: 8px;
+  font: 16px "Noto Sans";
+}
+#main footer .footer-left .contact-time div {
+  display: flex;
+  font: 14px "Noto Sans";
+  color: rgb(153, 153, 153);
+  letter-spacing: -0.5px;
+}
+#main footer .footer-left .contact-time div button {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 3px;
+  text-align: center;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background-color: transparent;
+  font: 14px "Noto Sans";
+  color: #333;
+}
+#main footer .footer-left .contact-email {
+  font: 12px/18px "Noto Sans";
+  color: rgb(153, 153, 153);
+}
+#main footer .footer-left .contact-email a {
+  font: 12px/18px "Noto Sans";
+  color: rgb(153, 153, 153);
+}
+#main footer .footer-right {
+  display: flex;
+  flex-direction: column;
+}
+#main footer .footer-right .introduce {
+  width: 470px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#main footer .footer-right .introduce li {
+  font: 14px/18px "Noto Sans";
+}
+#main footer .footer-right .introduce li:nth-of-type(5) {
+  font: bold 14px/18px "Noto Sans";
+}
+#main footer .footer-right .introduce li a {
+  color: #333;
+}
+#main footer .footer-right div {
+  font: 12px/18px "Noto Sans";
+  color: rgb(153, 153, 153);
+  margin-bottom: 30px;
+}
+#main footer .footer-right div a {
+  font: bold 12px/18px "Noto Sans";
+}
+#main footer .footer-right .sns {
+  display: flex;
+  justify-content: start;
+}
+#main footer .footer-right .sns li {
+  margin-right: 10px;
+}
+#main footer .footer-right .sns li img {
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
