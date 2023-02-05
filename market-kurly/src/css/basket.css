@@ -1,0 +1,635 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main header {
+  width: 1050px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+#main header .top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0px;
+}
+#main header .top ul {
+  width: 181.11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main header .top ul li a {
+  font: bold 12px/1 "Noto Sans";
+  color: #333;
+}
+#main header .top ul li:nth-of-type(1) a {
+  font: bold 12px/1 "Noto Sans";
+  color: rgb(95, 0, 128);
+}
+#main header .top ul li:nth-of-type(2)::before, #main header .top ul li:nth-of-type(3)::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  margin: 0px 10px;
+  background-color: rgb(217, 217, 217);
+}
+#main header .middle {
+  width: 100%;
+  padding: 5px 0px;
+}
+#main header .middle nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main header .middle nav .logo {
+  flex-basis: 200px;
+  flex-grow: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#main header .middle nav .logo li:nth-of-type(2) {
+  color: rgb(95, 0, 128);
+  font: bold 18px/1.33 "Noto Sans";
+  cursor: pointer;
+  margin-left: 20px;
+}
+#main header .middle nav .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 48px;
+  flex-grow: 0;
+  padding: 14px;
+  border: 1px solid rgb(95, 0, 128);
+  border-radius: 6px;
+}
+#main header .middle nav .search input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+#main header .middle nav .search button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  color: rgb(95, 0, 128);
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTI0IDI0SDZWNmgxOHoiLz4KICAgICAgICA8cGF0aCBkPSJNMjIuNSAyMi41aC0xNXYtMTVoMTV6Ii8+CiAgICAgICAgPGcgc3Ryb2tlPSIjMzMzIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xOC44MjUgMTMuMzUyYzAgMS43MjUtLjc1IDMuMjI1LTEuOTUgNC4yLS45NzUuODI1LTIuMTc1IDEuMjc1LTMuNTI1IDEuMjc1YTUuNDU3IDUuNDU3IDAgMCAxLTUuNDc1LTUuNDc1IDUuNDU3IDUuNDU3IDAgMCAxIDUuNDc1LTUuNDc1YzMtLjA3NSA1LjQ3NSAyLjQgNS40NzUgNS40NzV6TTIxLjM3NSAyMS4zNzVsLTMuNzUtMy43NSIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==) 0px 0px no-repeat;
+}
+#main header .middle nav .icon {
+  flex-basis: 180px;
+  flex-grow: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#main header .middle nav .icon li {
+  width: 36px;
+  height: 36px;
+}
+#main header .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+}
+#main header .bottom .category {
+  flex-basis: 140px;
+  flex-grow: 0;
+  display: flex;
+  justify-self: start;
+}
+#main header .bottom .category span:nth-of-type(1) {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  margin-right: 14px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMTZ2MS43SDBWMHptMCA2LjE1aDE2djEuN0gwdi0xLjd6bTAgNi4xNWgxNlYxNEgwdi0xLjd6IiBmaWxsPSIjMzMzIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg==) 0px 0px/16px 14px no-repeat;
+}
+#main header .bottom .category span:nth-of-type(2) {
+  display: inline-block;
+  font: bold 16px/20px "Noto Sans";
+  letter-spacing: -0.3px;
+  cursor: pointer;
+  color: #333;
+}
+#main header .bottom .gnb {
+  flex-grow: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#main header .bottom .gnb li {
+  width: 150px;
+  height: 55px;
+  text-align: center;
+  height: fit-content;
+  letter-spacing: -0.5px;
+  font: bold 16px "Noto Sans";
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+#main header .bottom .delivery-info {
+  width: 155px;
+  flex-grow: 0;
+  padding: 6px 16px;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 18px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  font: bold 13px/16px "Noto Sans";
+  text-align: center;
+  color: rgb(102, 102, 102);
+}
+#main header .bottom .delivery-info span {
+  font-weight: 500;
+  font: bold 13px/16px "Noto Sans";
+  color: rgb(95, 0, 128);
+}
+#main section {
+  width: 1050px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main section .title {
+  width: 100%;
+  padding: 50px 0px 48px;
+}
+#main section .title h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  color: #333;
+  text-align: center;
+}
+#main section .basket {
+  width: 100%;
+  height: 942px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+#main section .basket .left {
+  width: 750px;
+  padding: 18px 10px 16px 2px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+#main section .basket .left .select_option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-items: center;
+  padding: 18px 10px 16px 2px;
+  font-size: 14px;
+  line-height: 26px;
+}
+#main section .basket .left .select_option label {
+  display: flex;
+  align-items: center;
+}
+#main section .basket .left .select_option label input {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0px, 0px, 0px, 0px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+}
+#main section .basket .left .select_option label img {
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 26px;
+  margin-right: 10px;
+  color: rgb(51, 51, 51);
+}
+#main section .basket .left .select_option label span {
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(51, 51, 51);
+}
+#main section .basket .left .select_option > span {
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: rgb(221, 221, 221);
+  margin: 6px 21px 0px 22px;
+  vertical-align: top;
+}
+#main section .basket .left .select_option button {
+  cursor: default;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+}
+#main section .basket .left .product_category {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 15px 5px 15px 0px;
+  border-top: 1px solid rgb(51, 51, 51);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+#main section .basket .left .product_category h4 {
+  display: flex;
+  align-items: center;
+}
+#main section .basket .left .product_category h4 span:nth-of-type(1) {
+  width: 30px;
+  height: 30px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGgzMHYzMEgweiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuNSA0KSIgc3Ryb2tlPSIjRkY5QjVDIiBzdHJva2Utd2lkdGg9IjEuNSI+CiAgICAgICAgICAgIDxjaXJjbGUgY3g9IjExLjUiIGN5PSIxMSIgcj0iNiIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0xMS41IDB2Mk0xOS4yNzggMy4yMjJsLTEuNDE0IDEuNDE0TTIyLjUgMTFoLTJNMTkuMjc4IDE4Ljc3OGwtMS40MTQtMS40MTRNMTEuNSAyMnYtMk0zLjcyMiAxOC43NzhsMS40MTQtMS40MTRNLjUgMTFoMk0zLjcyMiAzLjIyMmwxLjQxNCAxLjQxNCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==);
+  display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  margin-right: 10px;
+}
+#main section .basket .left .product_category h4 span:nth-of-type(2) {
+  font-size: 18px;
+  line-height: 26px;
+}
+#main section .basket .left .product_category button {
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  background: none;
+  outline: none;
+}
+#main section .basket .left .product_category button img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#main section .basket .left .product_info {
+  padding: 20px 0px;
+  border-bottom: 1px solid #eee;
+}
+#main section .basket .left .product_info li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#main section .basket .left .product_info li label {
+  display: flex;
+  align-items: center;
+}
+#main section .basket .left .product_info li label input {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0px, 0px, 0px, 0px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+}
+#main section .basket .left .product_info li label img {
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 26px;
+  margin-right: 10px;
+  color: rgb(51, 51, 51);
+}
+#main section .basket .left .product_info li a {
+  width: 60px;
+  height: 78px;
+  margin-right: 20px;
+}
+#main section .basket .left .product_info li a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#main section .basket .left .product_info li .product_name {
+  width: 345px;
+}
+#main section .basket .left .product_info li .product_name p {
+  max-height: 54px;
+  padding-top: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
+}
+#main section .basket .left .product_info li .count_button {
+  width: 88px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(221, 223, 225);
+  border-radius: 3px;
+  align-items: center;
+}
+#main section .basket .left .product_info li .count_button button:nth-of-type(1) {
+  width: 28px;
+  height: 28px;
+  border: none;
+  font-size: 1px;
+  color: transparent;
+  background-size: cover;
+  background-color: transparent;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yMCAxNHYySDEwdi0yeiIgZmlsbD0iI0RERCIgZmlsbC1ydWxlPSJub256ZXJvIi8+Cjwvc3ZnPgo=);
+  margin-right: 8px;
+}
+#main section .basket .left .product_info li .count_button button:nth-of-type(2) {
+  width: 28px;
+  height: 28px;
+  border: none;
+  font-size: 1px;
+  color: transparent;
+  background-size: cover;
+  background-color: transparent;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xNiAxMHY0aDR2MmgtNHY0aC0ydi00aC00di0yaDR2LTRoMnoiIGZpbGw9IiMzMzMiIGZpbGwtcnVsZT0ibm9uemVybyIvPgo8L3N2Zz4K);
+  margin-left: 8px;
+}
+#main section .basket .left .product_info li .product_price {
+  width: 127px;
+  text-align: right;
+  margin-right: 20px;
+}
+#main section .basket .left .product_info li .product_price span {
+  padding: 5px 0px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(51, 51, 51);
+}
+#main section .basket .left .product_info li button {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yMSA5Ljc2MiAyMC4yMzggOSAxNSAxNC4yMzggOS43NjIgOSA5IDkuNzYyIDE0LjIzOCAxNSA5IDIwLjIzOGwuNzYyLjc2MkwxNSAxNS43NjIgMjAuMjM4IDIxbC43NjItLjc2MkwxNS43NjIgMTV6IiBmaWxsPSIjQ0NDIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg==);
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  border: 0px;
+  background-color: #fff;
+}
+#main section .basket .right {
+  width: 290px;
+  padding-top: 80px;
+}
+#main section .basket .right .basket_right_top {
+  width: 100%;
+  padding: 23px 19px 20px;
+  border-width: 1px 1px 0px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-top-color: rgb(242, 242, 242);
+  border-right-color: rgb(242, 242, 242);
+  border-left-color: rgb(242, 242, 242);
+  border-image: initial;
+  border-bottom-style: initial;
+  border-bottom-color: initial;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+#main section .basket .right .basket_right_top h3 {
+  padding-left: 24px;
+  background: url(https://res.kurly.com/pc/service/cart/2007/ico_location.svg) 0px 50%/20px 20px no-repeat;
+  color: #333;
+}
+#main section .basket .right .basket_right_top div {
+  padding-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(51, 51, 51);
+}
+#main section .basket .right .basket_right_top div p {
+  padding-bottom: 16px;
+}
+#main section .basket .right .basket_right_top div p em {
+  font-style: normal;
+  color: rgb(95, 0, 128);
+}
+#main section .basket .right .basket_right_top button {
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 36px;
+  border-radius: 3px;
+  color: rgb(95, 0, 128);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(95, 0, 128);
+  cursor: pointer;
+  text-align: center;
+}
+#main section .basket .right .basket_right_top button span {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-indent: -14px;
+}
+#main section .basket .right .basket_right_top button span img {
+  vertical-align: top;
+}
+#main section .basket .right .basket_right_middle {
+  width: 100%;
+  padding: 19px 18px 18px 20px;
+  border: 1px solid rgb(242, 242, 242);
+  background-color: rgb(250, 250, 250);
+}
+#main section .basket .right .basket_right_middle div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #333;
+  margin-top: 15px;
+}
+#main section .basket .right .basket_right_middle div:nth-of-type(1) {
+  margin-top: 0px;
+}
+#main section .basket .right .basket_right_middle div:nth-last-of-type(1) {
+  margin-top: 16px;
+  padding-top: 18px;
+  border-top: 1px solid rgb(244, 244, 244);
+}
+#main section .basket .right .basket_right_middle div:nth-last-of-type(1) span span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-right: 3px;
+}
+#main section .basket .right .basket_right_middle div span span {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+}
+#main section .basket .right .basket_right_bottom {
+  width: 100%;
+  padding-top: 20px;
+}
+#main section .basket .right .basket_right_bottom button {
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 56px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(221, 221, 221);
+  border: 0px none;
+  font-weight: bold;
+}
+#main section .basket .right .basket_right_bottom button span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+}
+#main section .basket .right .basket_right_bottom ul {
+  padding: 16px 0px;
+}
+#main section .basket .right .basket_right_bottom ul li {
+  padding-top: 4px;
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 7px;
+  letter-spacing: -0.5px;
+}
+#main section .basket .right .basket_right_bottom ul li::before {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 6px 0px 0px -6px;
+  background: rgb(153, 153, 153);
+  vertical-align: top;
+  border-radius: 50%;
+  content: "";
+}
+#main footer {
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+#main footer .footer-left {
+  display: flex;
+  flex-direction: column;
+}
+#main footer .footer-left h2 {
+  font: bold 20px/29px "Noto Sans";
+  margin-bottom: 17px;
+}
+#main footer .footer-left strong {
+  font: bold 28px/40px "Noto Sans";
+  margin-bottom: 20px;
+}
+#main footer .footer-left strong span {
+  margin-left: 8px;
+  font: 16px "Noto Sans";
+}
+#main footer .footer-left .contact-time div {
+  display: flex;
+  font: 14px "Noto Sans";
+  color: rgb(153, 153, 153);
+  letter-spacing: -0.5px;
+}
+#main footer .footer-left .contact-time div button {
+  display: inline-block;
+  width: 140px;
+  height: 40px;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 3px;
+  text-align: center;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background-color: transparent;
+  font: 14px "Noto Sans";
+  color: #333;
+}
+#main footer .footer-left .contact-email {
+  font: 12px/18px "Noto Sans";
+  color: rgb(153, 153, 153);
+}
+#main footer .footer-left .contact-email a {
+  font: 12px/18px "Noto Sans";
+  color: rgb(153, 153, 153);
+}
+#main footer .footer-right {
+  display: flex;
+  flex-direction: column;
+}
+#main footer .footer-right .introduce {
+  width: 470px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#main footer .footer-right .introduce li {
+  font: 14px/18px "Noto Sans";
+}
+#main footer .footer-right .introduce li:nth-of-type(5) {
+  font: bold 14px/18px "Noto Sans";
+}
+#main footer .footer-right .introduce li a {
+  color: #333;
+}
+#main footer .footer-right div {
+  font: 12px/18px "Noto Sans";
+  color: rgb(153, 153, 153);
+  margin-bottom: 30px;
+}
+#main footer .footer-right div a {
+  font: bold 12px/18px "Noto Sans";
+}
+#main footer .footer-right .sns {
+  display: flex;
+  justify-content: start;
+}
+#main footer .footer-right .sns li {
+  margin-right: 10px;
+}
+#main footer .footer-right .sns li img {
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=basket.css.map */

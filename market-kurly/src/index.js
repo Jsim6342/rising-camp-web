@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Main from './pages/Main';
+import Product from './pages/Product';
+import Basket from './pages/Basket';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Main />
+    <Product />
+    <Basket />
   </React.StrictMode>
 );
 
