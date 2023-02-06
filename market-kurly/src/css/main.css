@@ -239,6 +239,7 @@ a {
   width: 1050px;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   margin-bottom: 100px;
 }
 #main .bargain .bargain-left {
