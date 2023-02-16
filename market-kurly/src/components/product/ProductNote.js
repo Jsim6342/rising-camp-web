@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductNote = () => {
   return (
-    <article class="note">
+    <article id="note">
         <h3>
             <span>Kurly’s Note</span>
         </h3>

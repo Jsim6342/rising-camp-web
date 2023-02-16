@@ -4,7 +4,7 @@ import ReviewContent from './ReviewContent'
 
 const Review = () => {
   return (
-    <section class="review">
+    <section id="review">
         <ReviewIntro />
 
         <ReviewContent />

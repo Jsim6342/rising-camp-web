@@ -1,8 +1,18 @@
 import React from 'react'
+import {Link, Navigate, useNavigate} from 'react-router-dom'
+
 
 const BargainRight = () => {
+
+  const navigate = useNavigate();
+
+  const goToProduct = () => {
+    alert('세일 페이지로 이동합니다.');
+    navigate('/product');
+  }
+
   return (
-    <div className="bargain-right">
+    <div className="bargain-right" onClick={goToProduct}>
         <img src="https://product-image.kurly.com/product/image/92f30547-f19f-4ebb-afd3-d2a6d7e34fde.jpg" alt="상품 이미지"/>
 
         <p>6가지 어묵으로 더 풍성한</p>

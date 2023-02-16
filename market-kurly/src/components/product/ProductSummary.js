@@ -1,6 +1,25 @@
 import React from 'react'
+import { useState } from "react";
 
 const ProductSummary = () => {
+
+const [count, setCount] = useState(1);
+
+
+let totalPrice = () => {
+    let price = count * 10800;
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+const countPlus = () => {
+    setCount(count + 1);
+}
+
+const countMinus = () => {
+    if(count === 1) return;
+    setCount(count - 1);
+}
+
   return (
     <section class="product_summary">
                 <p class="delivery">샛별배송</p>
@@ -90,11 +109,11 @@ const ProductSummary = () => {
 
                                 <div class="count_price">
                                     <div class="count_button">
-                                        <button class="minus"></button>
-                                        <div class="count">1</div>
-                                        <button class="plus"></button>
+                                        <button class="minus" onClick={countMinus}></button>
+                                        <div class="count">{count}</div>
+                                        <button class="plus" onClick={countPlus}></button>
                                     </div>
-                                    <span>10,800원</span>
+                                    <span>{totalPrice()}</span>
                                 </div>
                                 
                             </div>
@@ -104,7 +123,7 @@ const ProductSummary = () => {
                 <div class="total_price">
                     <div>
                         <span>총 상품금액:</span>
-                        <span>10,800</span>
+                        <span>{totalPrice()}</span>
                         <span>원</span>
                     </div>
                     <div>

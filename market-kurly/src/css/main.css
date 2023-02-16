@@ -113,6 +113,47 @@ a {
   width: 36px;
   height: 36px;
 }
+#main header .middle nav .icon li:nth-of-type(1) {
+  position: relative;
+}
+#main header .middle nav .icon li:nth-of-type(1) div {
+  display: none;
+  width: 260px;
+  height: 120px;
+  background-color: #fff;
+  padding: 15px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #eee;
+}
+#main header .middle nav .icon li:nth-of-type(1) div button {
+  margin-top: 10px;
+  margin-right: 5px;
+  font: 14px/1 "Noto Sans";
+}
+#main header .middle nav .icon li:nth-of-type(1) div button:nth-of-type(1) {
+  width: 75px;
+  height: 35px;
+  font: bold 8px/1 "Noto Sans";
+  color: #5F0080;
+  background-color: #fff;
+  border: 1px solid #5F0080;
+  border-radius: 3px;
+}
+#main header .middle nav .icon li:nth-of-type(1) div button:nth-of-type(2) {
+  width: 140px;
+  height: 35px;
+  font: bold 8px/1 "Noto Sans";
+  color: #fff;
+  background-color: #5F0080;
+  border: none;
+  border-radius: 3px;
+}
+#main header .middle nav .icon li:nth-of-type(1):hover div {
+  display: block;
+}
 #main header .bottom {
   width: 100%;
   display: flex;
@@ -154,6 +195,10 @@ a {
   font: bold 16px "Noto Sans";
   color: rgb(51, 51, 51);
   cursor: pointer;
+}
+#main header .bottom .gnb li:hover {
+  color: #5F0080;
+  text-decoration: underline;
 }
 #main header .bottom .delivery-info {
   width: 155px;
@@ -262,12 +307,6 @@ a {
 #main .bargain .bargain-left .time span {
   font: bold 32px "Noto Sans";
   color: rgb(51, 51, 51);
-}
-#main .bargain .bargain-left .time span:nth-of-type(1)::after, #main .bargain .bargain-left .time span:nth-of-type(2)::after {
-  content: ":";
-  width: 11px;
-  height: 50px;
-  font: bold 25px "Noto Sans";
 }
 #main .bargain .bargain-left p {
   font: 14px/1.43 "Noto Sans";

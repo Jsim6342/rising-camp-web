@@ -1,7 +1,9 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const ProductNormal = () => {
   return (
+        <Link to="/product" >
         <li>
         <img src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=400/product/image/0a26fb8a-3bdb-4163-9d05-a9e1e80203bf.jpg" alt="상품 이미지"/>
         <h3>[닥터유] 면역수 (530mL X 20개)</h3>
@@ -11,6 +13,7 @@ const ProductNormal = () => {
             <span className="review-number">후기 999+</span>
         </div>
         </li>
+        </Link>
   )
 }
 

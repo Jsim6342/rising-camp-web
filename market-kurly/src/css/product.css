@@ -208,6 +208,7 @@ a {
 #main .product_wrap .product_summary .title {
   display: flex;
   justify-content: space-between;
+  padding: 0px;
 }
 #main .product_wrap .product_summary .title h1 {
   width: 500px;
@@ -472,10 +473,10 @@ a {
   margin-top: 40px;
   width: 1010px;
 }
-#main .product_detail .intro .context {
+#main .product_detail #intro .context {
   text-align: center;
 }
-#main .product_detail .intro .context h3 {
+#main .product_detail #intro .context h3 {
   display: block;
   margin: 75px 0px 0px;
   padding-bottom: 35px;
@@ -485,13 +486,13 @@ a {
   border-bottom: 1px solid rgb(193, 193, 193);
   color: rgb(102, 102, 102);
 }
-#main .product_detail .intro .context h3 small {
+#main .product_detail #intro .context h3 small {
   display: block;
   font-size: 24px;
   margin-bottom: 14px;
   line-height: 15px;
 }
-#main .product_detail .intro .context p {
+#main .product_detail #intro .context p {
   margin-top: 28px;
   font-size: 18px;
   line-height: 32px;
@@ -574,15 +575,15 @@ a {
   line-height: 38px;
   margin-bottom: 10px;
 }
-#main .product_detail .note {
+#main .product_detail #note {
   margin-top: 100px;
   margin-bottom: 200px;
   width: 1010px;
 }
-#main .product_detail .note h3 {
+#main .product_detail #note h3 {
   width: 100%;
 }
-#main .product_detail .note h3 span {
+#main .product_detail #note h3 span {
   position: relative;
   z-index: 2;
   display: inline-block;
@@ -594,7 +595,7 @@ a {
   color: rgb(102, 102, 102);
   text-shadow: 2px 0px;
 }
-#main .product_detail .note h3 span::before {
+#main .product_detail #note h3 span::before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -603,35 +604,35 @@ a {
   height: 1px;
   background: rgb(185, 185, 185);
 }
-#main .product_detail .note .context {
+#main .product_detail #note .context {
   font-size: 18px;
   line-height: 32px;
   color: rgb(55, 55, 55);
   margin-top: 60px;
 }
-#main .product_detail .note .context strong {
+#main .product_detail #note .context strong {
   line-height: 38px;
   display: block;
   margin-bottom: 20px;
   font-size: 30px;
 }
-#main .product_detail .note img {
+#main .product_detail #note img {
   margin-top: 300px;
 }
-#main .review {
+#main #review {
   width: 1010px;
   margin-bottom: 200px;
 }
-#main .review .review_intro {
+#main #review .review_intro {
   width: 100%;
 }
-#main .review .review_intro h3 {
+#main #review .review_intro h3 {
   font-size: 24px;
   font-weight: bold;
   line-height: 22px;
   color: rgb(51, 51, 51);
 }
-#main .review .review_intro ul {
+#main #review .review_intro ul {
   margin-top: 10px;
   padding: 7px 0px 40px 3px;
   font-weight: 500;
@@ -639,68 +640,68 @@ a {
   line-height: 21px;
   color: rgb(102, 102, 102);
 }
-#main .review .review_intro ul li:nth-of-type(1) {
+#main #review .review_intro ul li:nth-of-type(1) {
   font-weight: bold;
 }
-#main .review .review_intro ul li:nth-of-type(1)::before {
+#main #review .review_intro ul li:nth-of-type(1)::before {
   display: none;
 }
-#main .review .review_intro ul li::before {
+#main #review .review_intro ul li::before {
   content: "•";
   margin-right: 5px;
   display: inline-block;
   font-size: 10px;
 }
-#main .review .review_intro .review_imgs {
+#main #review .review_intro .review_imgs {
   width: 100%;
   display: flex;
 }
-#main .review .review_intro .review_imgs a {
+#main #review .review_intro .review_imgs a {
   width: 124px;
   height: 124px;
   margin-left: 3px;
   background: url(https://img-cf.kurly.com/cdn-cgi/image/width=640,height=640,quality=90/shop/data/review/20230128/c2f61862-cf62-4635-9233-5c4ba8cb5d9d.jpeg) 0% 0%/cover no-repeat;
 }
-#main .review .review_intro .review_imgs a:nth-of-type(1) {
+#main #review .review_intro .review_imgs a:nth-of-type(1) {
   margin-left: 0px;
 }
-#main .review .review_content {
+#main #review .review_content {
   width: 1010px;
   margin-top: 20px;
 }
-#main .review .review_content .review_header {
+#main #review .review_content .review_header {
   display: flex;
   justify-content: space-between;
   padding: 15px 0px;
   border-bottom: 2px solid #333;
 }
-#main .review .review_content .review_header span {
+#main #review .review_content .review_header span {
   font-size: 12px;
   line-height: 16px;
   color: #333;
   font-weight: bold;
 }
-#main .review .review_content .review_header .order button {
+#main #review .review_content .review_header .order button {
   font-size: 12px;
   color: rgb(51, 51, 51);
   overflow: visible;
   background-color: transparent;
   border: none;
 }
-#main .review .review_content .review_header .order button:nth-of-type(1) {
+#main #review .review_content .review_header .order button:nth-of-type(1) {
   font-weight: bold;
 }
-#main .review .review_content .review_header .order button:nth-of-type(1)::after {
+#main #review .review_content .review_header .order button:nth-of-type(1)::after {
   content: "";
   border-left: 1px solid rgb(153, 153, 153);
   margin-left: 8px;
   margin-right: 8px;
 }
-#main .review .review_content .review_noti .noti {
+#main #review .review_content .review_noti .noti {
   padding: 21px 20px 20px;
   border-bottom: 1px solid rgb(238, 238, 238);
 }
-#main .review .review_content .review_noti .noti span {
+#main #review .review_content .review_noti .noti span {
   display: inline-block;
   height: 22px;
   width: 42px;
@@ -713,7 +714,7 @@ a {
   color: rgb(102, 102, 102);
   vertical-align: 2px;
 }
-#main .review .review_content .review_noti .noti a {
+#main #review .review_content .review_noti .noti a {
   margin-left: 9px;
   font-size: 16px;
   font-weight: 400;
@@ -722,7 +723,7 @@ a {
   color: rgb(51, 51, 51);
   letter-spacing: -1px;
 }
-#main .review .review_content .review_detail {
+#main #review .review_content .review_detail {
   width: 1010px;
   padding: 30px 0px 19px 20px;
   border-bottom: 1px solid rgb(244, 244, 244);
@@ -731,10 +732,10 @@ a {
   line-height: 19px;
   display: flex;
 }
-#main .review .review_content .review_detail .user_info {
+#main #review .review_content .review_detail .user_info {
   width: 225px;
 }
-#main .review .review_content .review_detail .user_info span:nth-of-type(1) {
+#main #review .review_content .review_detail .user_info span:nth-of-type(1) {
   display: inline-block;
   height: 18px;
   border: 1px solid rgb(95, 0, 128);
@@ -749,17 +750,17 @@ a {
   background-color: rgb(255, 255, 255);
   color: rgb(95, 0, 128);
 }
-#main .review .review_content .review_detail .user_info span:nth-of-type(2) {
+#main #review .review_content .review_detail .user_info span:nth-of-type(2) {
   position: relative;
   top: 3px;
   left: -5px;
   font-size: 14px;
   line-height: 19px;
 }
-#main .review .review_content .review_detail .user_review {
+#main #review .review_content .review_detail .user_review {
   width: 765px;
 }
-#main .review .review_content .review_detail .user_review h3 {
+#main #review .review_content .review_detail .user_review h3 {
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
@@ -769,7 +770,7 @@ a {
   word-break: break-all;
   white-space: normal;
 }
-#main .review .review_content .review_detail .user_review p {
+#main #review .review_content .review_detail .user_review p {
   padding-top: 12px;
   word-break: break-word;
   white-space: pre-line;
@@ -779,24 +780,24 @@ a {
   color: rgb(51, 51, 51);
   padding-right: 20px;
 }
-#main .review .review_content .review_detail .user_review .user_review_img {
+#main #review .review_content .review_detail .user_review .user_review_img {
   margin-top: 15px;
 }
-#main .review .review_content .review_detail .user_review .user_review_img a img {
+#main #review .review_content .review_detail .user_review .user_review_img a img {
   border-radius: 10px;
   width: 93px;
   height: 93px;
 }
-#main .review .review_content .review_detail .user_review .user_review_footer {
+#main #review .review_content .review_detail .user_review .user_review_footer {
   margin-top: 20px;
 }
-#main .review .review_content .review_detail .user_review .user_review_footer span {
+#main #review .review_content .review_detail .user_review .user_review_footer span {
   color: rgb(153, 153, 153);
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
 }
-#main .review .review_content .review_detail .user_review .user_review_footer button {
+#main #review .review_content .review_detail .user_review .user_review_footer button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -812,26 +813,26 @@ a {
   overflow: visible;
   background-color: transparent;
 }
-#main .review .review_content .review_detail .user_review .user_review_footer button span:nth-of-type(1) {
+#main #review .review_content .review_detail .user_review .user_review_footer button span:nth-of-type(1) {
   width: 15px;
   height: 15px;
   margin-right: 4px;
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIKICAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoCiAgICBkPSJNNC4wNDgzNyAxMi45OTk4SDIuMjE5MzVDMS41NDU5MiAxMi45OTk4IDEgMTIuNDYyNiAxIDExLjc5OTlWNy41OTk5MkMxIDYuOTM3MTggMS41NDU5MiA2LjM5OTkzIDIuMjE5MzUgNi4zOTk5M0g0LjA0ODM3TTguMzE2MDggNS4xOTk5NVYyLjc5OTk4QzguMzE2MDggMS44MDU4OCA3LjQ5NzIgMSA2LjQ4NzA2IDFMNC4wNDgzNyA2LjM5OTkzVjEyLjk5OTlIMTAuOTI1NUMxMS41MzM1IDEzLjAwNjYgMTIuMDUzNyAxMi41NzE1IDEyLjE0NDggMTEuOTc5OUwxMi45ODYyIDYuNTc5OTNDMTMuMDM5OSA2LjIzMTg1IDEyLjkzNTUgNS44NzgxMiAxMi43MDA4IDUuNjEyNDVDMTIuNDY2IDUuMzQ2NzggMTIuMTI0NiA1LjE5NTk2IDExLjc2NjggNS4xOTk5NUg4LjMxNjA4WiIKICAgIHN0cm9rZT0iIzk5OTk5OSIgc3Ryb2tlLXdpZHRoPSIxLjEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==) center center no-repeat;
 }
-#main .review .review_content .review_detail .user_review .user_review_footer button span:nth-of-type(2) {
+#main #review .review_content .review_detail .user_review .user_review_footer button span:nth-of-type(2) {
   font-size: 12px;
   line-height: 20px;
   color: rgb(153, 153, 153);
 }
-#main .review .review_content .review_detail .user_review_footer {
+#main #review .review_content .review_detail .user_review_footer {
   display: flex;
   justify-content: space-between;
 }
-#main .review .paging {
+#main #review .paging {
   text-align: center;
   margin-top: 20px;
 }
-#main .review .paging button {
+#main #review .paging button {
   width: 44px;
   height: 44px;
   padding: 0px;
@@ -841,11 +842,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#main .review .paging button:nth-of-type(1) {
+#main #review .paging button:nth-of-type(1) {
   background-image: url(https://res.kurly.com/kurly/ico/2021/paging-prev-disabled.svg);
   cursor: default;
 }
-#main .review .paging button:nth-of-type(2) {
+#main #review .paging button:nth-of-type(2) {
   background-image: url(https://res.kurly.com/kurly/ico/2021/paging-next-activated.svg);
   cursor: default;
 }

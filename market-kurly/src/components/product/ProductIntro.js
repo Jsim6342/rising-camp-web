@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductIntro = () => {
   return (
-    <article class="intro">       
+    <article id="intro">       
         <div class="picture">
             <img src="https://img-cf.kurly.com/shop/data/goodsview/20220801/gv40000394934_1.jpg" alt="product"/>
         </div>

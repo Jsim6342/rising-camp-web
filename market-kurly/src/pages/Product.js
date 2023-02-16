@@ -6,8 +6,15 @@ import ProductSummary from '../components/product/ProductSummary';
 import ProductLnb from '../components/product/ProductLnb';
 import ProductDetail from '../components/product/ProductDetail';
 import Review from '../components/product/Review';
+import { useEffect } from 'react';
 
 const Product = () => {
+
+  useEffect(() => {
+    
+  }, [])
+
+
   return (
     <div id="main">
 

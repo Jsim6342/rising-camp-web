@@ -1,6 +1,10 @@
 import React from 'react'
 
-const BasketRight = () => {
+const BasketRight = (props) => {
+
+    let selectList = document.getElementsByClassName("product_select");
+
+
   return (
     <div class="right">
             <div class="basket_right_top">
@@ -23,7 +27,7 @@ const BasketRight = () => {
                 
                 <div>
                     <span>상품금액</span>
-                    <span><span>0</span>원</span>
+                    <span><span>{props.totalPrice()}</span>원</span>
                 </div>
                 <div>
                     <span>상품할인금액</span>
@@ -31,11 +35,11 @@ const BasketRight = () => {
                 </div>
                 <div>
                     <span>배송비</span>
-                    <span><span>0</span>원</span>
+                    <span><span>{(props.counts >= 1) ? "3,000" : "0"}</span>원</span>
                 </div>
                 <div>
                     <span>결제예정금액</span>
-                    <span><span>0</span>원</span>
+                    <span><span>{props.totalPrice()}</span>원</span>
                 </div>
             </div>
             <div class="basket_right_bottom">

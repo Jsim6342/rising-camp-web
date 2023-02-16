@@ -251,6 +251,7 @@
             .title {
                 display: flex;
                 justify-content: space-between;
+                padding: 0px;
 
                 h1 {
                     width: 500px;
@@ -272,6 +273,7 @@
                     border: none;
                 }
             }
+
             h2 {
                 padding-top: 5px;
                 font-size: 14px;
@@ -561,7 +563,7 @@
         margin-top: 40px;
         width: 1010px;
 
-        .intro {
+        #intro {
             .context {
                 text-align: center;
                 h3 {
@@ -683,7 +685,7 @@
 
         }
 
-        .note {
+        #note {
             margin-top: 100px;
             margin-bottom: 200px;
             width: 1010px;
@@ -739,7 +741,7 @@
         
     }
 
-    .review {
+    #review {
         width: 1010px;
         margin-bottom: 200px;
 
