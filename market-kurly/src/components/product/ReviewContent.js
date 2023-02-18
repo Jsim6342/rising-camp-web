@@ -2,7 +2,7 @@ import React from 'react'
 import ReviewNoti from './ReviewNoti'
 import ReviewDetail from './ReviewDetail'
 
-const ReviewContent = () => {
+const ReviewContent = (props) => {
   return (
     <div class="review_content">
         <div class="review_header">
@@ -16,11 +16,16 @@ const ReviewContent = () => {
             <ReviewNoti />
             <ReviewNoti />
         </div>
+        {
+          props.reviews.map((review) => (
+                <ReviewDetail review={review} />
+          ))
+        }
+            
+            {/* <ReviewDetail />
             <ReviewDetail />
             <ReviewDetail />
-            <ReviewDetail />
-            <ReviewDetail />
-            <ReviewDetail />
+            <ReviewDetail /> */}
 
     </div>
   )

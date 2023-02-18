@@ -1,12 +1,13 @@
 import React from 'react'
 import '../css/product.css'
-import Header from '../components/commons/Header';
-import Footer from '../components/commons/Footer';
-import ProductSummary from '../components/product/ProductSummary';
-import ProductLnb from '../components/product/ProductLnb';
-import ProductDetail from '../components/product/ProductDetail';
-import Review from '../components/product/Review';
-import { useEffect } from 'react';
+import Header from '../components/commons/Header'
+import Footer from '../components/commons/Footer'
+import ProductSummary from '../components/product/ProductSummary'
+import ProductLnb from '../components/product/ProductLnb'
+import ProductDetail from '../components/product/ProductDetail'
+import Review from '../components/product/Review'
+import { useEffect } from 'react'
+import data from '../data.json'
 
 const Product = () => {
 
@@ -22,14 +23,14 @@ const Product = () => {
 
         <main class="product_wrap">
             <div class="product_img">
-                <img src="https://product-image.kurly.com/product/image/0a26fb8a-3bdb-4163-9d05-a9e1e80203bf.jpg" alt="product"/>
+                <img src={data.product.image} alt="product"/>
             </div>
-            <ProductSummary />
+            <ProductSummary title={data.product.title} subTitle={data.product.subTitle} price={data.product.price} seller={data.product.seller} packing={data.product.packing} unit={data.product.unit} capacity={data.product.capacity} originArea={data.product.originArea} guidance={data.product.guidance}/>
         </main>
 
         <ProductLnb />
 
-        <ProductDetail />
+        <ProductDetail subTitle={data.product.subTitle} unit={data.product.unit} capacity={data.product.capacity} introTitle={data.product.introTitle} introduce={data.product.introduce} pointImg={data.product.pointImg} tips={data.product.tips} notes={data.product.notes} noteImg={data.product.noteImg}/>
 
         <Review />
 

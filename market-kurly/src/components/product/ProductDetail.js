@@ -4,13 +4,13 @@ import ProductPoint from './ProductPoint'
 import ProductTip from './ProductTip'
 import ProductNote from './ProductNote'
 
-const ProductDetail = () => {
+const ProductDetail = (props) => {
   return (
     <section class="product_detail">
-        <ProductIntro />
-        <ProductPoint />
-        <ProductTip />
-        <ProductNote />
+        <ProductIntro subTitle={props.subTitle} introTitle={props.introTitle} introduce={props.introduce}/>
+        <ProductPoint pointImg={props.pointImg}/>
+        <ProductTip unit={props.unit} capacity={props.capacity} tips={props.tips}/>
+        <ProductNote notes={props.notes} noteImg={props.noteImg}/>
     </section>
   )
 }

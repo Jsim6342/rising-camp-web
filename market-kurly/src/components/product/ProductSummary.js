@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState } from "react";
 
-const ProductSummary = () => {
+const ProductSummary = (props) => {
 
 const [count, setCount] = useState(1);
 
 
 let totalPrice = () => {
-    let price = count * 10800;
+    let price = count * parseInt((props.price).replace(',',''));
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
@@ -24,12 +24,12 @@ const countMinus = () => {
     <section class="product_summary">
                 <p class="delivery">샛별배송</p>
                 <div class="title">
-                    <h1>[닥터유] 면역수 (530mL X 20개)</h1>
+                    <h1>{props.title}</h1>
                     <button> </button>
                 </div>
-                <h2>간편하게 챙기는 아연</h2>
+                <h2>{props.subTitle}</h2>
                 <div class="price">
-                    <span>10,800</span><span>원</span>
+                    <span>{props.price}</span><span>원</span>
                 </div>
                 <p class="login-ment">로그인 후, 적립 혜택이 제공됩니다.</p>
                 <div class="info">
@@ -46,23 +46,14 @@ const countMinus = () => {
                     <dl>
                         <dt>판매자</dt>
                         <dd>
-                            <p>컬리</p>
+                            <p>{props.seller}</p>
                         </dd>
                     </dl>
                     <dl>
                         <dt>포장타입</dt>
                         <dd>
                             <p> 
-                                상온 (종이포장) <br/>
-                                택배배송은 에코 포장이 스티로폼으로 대체됩니다.
-                            </p>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>포장타입</dt>
-                        <dd>
-                            <p>
-                                상온 (종이포장) <br/>
+                                {props.packing} <br/>
                                 택배배송은 에코 포장이 스티로폼으로 대체됩니다.
                             </p>
                         </dd>
@@ -71,7 +62,7 @@ const countMinus = () => {
                         <dt>판매단위</dt>
                         <dd>
                             <p>
-                                1묶음
+                                {props.unit}
                             </p>
                         </dd>
                     </dl>
@@ -79,7 +70,7 @@ const countMinus = () => {
                         <dt>용량/중량</dt>
                         <dd>
                             <p>
-                                530mL X 20개입
+                                {props.capacity}
                             </p>
                         </dd>
                     </dl>
@@ -87,7 +78,7 @@ const countMinus = () => {
                         <dt>원산지</dt>
                         <dd>
                             <p>
-                                제품설명/상세정보 참고
+                                {props.originArea}
                             </p>
                         </dd>
                     </dl>
@@ -95,9 +86,7 @@ const countMinus = () => {
                         <dt>안내사항</dt>
                         <dd>
                             <p>
-                                생수/탄산수의 1일 구매 최대 용량은 36리터 혹은 3개까지입니다. <br/>
-                                용량 혹은 수량 초과 상품은 배송되지 않을 수 있으며, 배송 되지 않은 상품은 익일(주말/공휴일제외) 환불 해 드리겠습니다. <br/>
-                                본 정책은 배송 매니저님의 안전과 건강을 위해 시행하게 됐습니다. 고객님의 양해를 부탁 드립니다.
+                                {props.guidance}
                             </p>
                         </dd>
                     </dl>
@@ -105,7 +94,7 @@ const countMinus = () => {
                         <dt>상품선택</dt>
                         <dd>
                             <div class="product_select">
-                                <p>[닥터유] 면역수 (530mL X 20개)</p>
+                                <p>{props.title}</p>
 
                                 <div class="count_price">
                                     <div class="count_button">
